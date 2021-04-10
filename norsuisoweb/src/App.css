@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.logoWrapper{
+  margin-left: auto
+}
+
+.NSTitle{
+  margin: auto
+}

@@ -1,5 +1,6 @@
 import {  Tab, Tabs } from '@material-ui/core';
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const MainTabs = () => {
     const [value, setValue] = useState(0);
@@ -13,9 +14,10 @@ const MainTabs = () => {
                 onChange={handleChange}
                 centered
             >
-                <Tab label="Tab 1" />
-                <Tab label="Tab 2" />
-                <Tab label="Tab 3" />
+                <Tab label="Inicio" component={Link} to="/" />
+                <Tab label="Noticias" component={Link} to="/noticias" />
+                <Tab label="MultiTwitch" component={Link} to="/multitwitch" />
+                <Tab label="Contacto" component={Link} to="/contacto" />
             </Tabs>
         </div>
     )
