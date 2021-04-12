@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 import Contacto from '../Screens/Contacto'
 import Inicio from '../Screens/Inicio'
+import Miembros from '../Screens/Miembros'
 
 const Routes = () => {
     return (
@@ -12,6 +13,7 @@ const Routes = () => {
             <Switch>
                 <Route exact path="/" component={Inicio} />
                 <Route exact path="/contacto" component={Contacto} />
+                <Route exact path="/miembros" component={Miembros} />
             </Switch>
         </div>
     )

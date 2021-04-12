@@ -15,7 +15,7 @@ const MainTabs = () => {
                 centered
             >
                 <Tab label="Inicio" component={Link} to="/" />
-                <Tab label="Noticias" component={Link} to="/noticias" />
+                <Tab label="Miembros" component={Link} to="/miembros" />
                 <Tab label="MultiTwitch" component={Link} to="/multitwitch" />
                 <Tab label="Contacto" component={Link} to="/contacto" />
             </Tabs>
