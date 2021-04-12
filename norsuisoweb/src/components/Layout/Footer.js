@@ -9,7 +9,12 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '10px'
     },
     footerText:{
-        paddingRight: '4px', color: 'white', fontWeight: 'bold', display: 'flex', flexDirection: 'column', justifyContent: 'center'
+        paddingRight: '4px', 
+        color: 'white', 
+        fontWeight: 'bold', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'center'
     },
     logo: {
         display: 'flex', 
