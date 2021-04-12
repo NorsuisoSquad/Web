@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 
 /*Borrar desde aqui---------------------------------------------------------------------------*/
 import { Box } from '@material-ui/core';
@@ -26,6 +26,18 @@ const Inicio = () => {
     return (
         <div className={/*classes.borde, */classes.otro}>
             Pag de Inicio
+
+            <hr />
+
+            <Button onClick={Prueba}>Boton Prueba Funcion </Button>
+            <Typography>a</Typography>
+
+            <Box display='flex'>
+                <TwitchPlayer channel="emmanueltc" width="622px" height="350px" muted />
+                <TwitchChat channel="emmanueltc" width="325px" height="350px" theme='dark' />
+            </Box>
+
+
             {/*Borrar desde aqui---------------------------------------------------------------------------*/}
             {/*            <Box display="flex" alignItems="flex-start" p={1} m={1} bgcolor="background.paper" css={{ height: 50 }}>
                 <Box flexGrow={1}><Typography variant="h6">NorsuisoSquad</Typography></Box>
@@ -37,7 +49,7 @@ const Inicio = () => {
             </Box>*/}
             {/*Hasta aca-----------------------------------------------------------------------------------*/}
 
-            <Box display="flex">
+            {/*<Box display="flex">
                 <Box flexGrow={1}>
                     <TwitchEmbed channel="emmanueltc" id="emmanueltc" theme="dark" muted onVideoPause={() => console.log(':(')} />
                 </Box>
@@ -55,10 +67,16 @@ const Inicio = () => {
 
                 <TwitchEmbed channel="politotrukutru" id="politotrukutru" theme="dark" muted onVideoPause={() => console.log(':(')} />
 
-            </Box>
+            </Box> */}
+
 
         </div>
     )
+
+    function Prueba() {
+        console.log('Prueba de Functions')
+    }
 }
+
 
 export default Inicio
