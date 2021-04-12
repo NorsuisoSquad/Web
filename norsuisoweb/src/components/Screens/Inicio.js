@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor:'white'
         },*/
     otro: {
-        height: '87.4vh'
+        height: 'auto'
     }
 }))
 
@@ -37,14 +37,25 @@ const Inicio = () => {
             </Box>*/}
             {/*Hasta aca-----------------------------------------------------------------------------------*/}
 
-            <TwitchEmbed
-                channel="emmanueltc"
-                id="emmanueltc"
-                theme="dark"
-                muted
-                onVideoPause={() => console.log(':(')}
-            />
+            <Box display="flex">
+                <Box flexGrow={1}>
+                    <TwitchEmbed channel="emmanueltc" id="emmanueltc" theme="dark" muted onVideoPause={() => console.log(':(')} />
+                </Box>
+                <Box flexGrow={1}>
+                    <TwitchEmbed channel="zafiro_online" id="zafiro_online" theme="dark" muted onVideoPause={() => console.log(':(')} />
+                </Box>
+            </Box>
+            <Box display="flex">
+                <TwitchEmbed channel="kayflawersh" id="kayflawersh" theme="dark" muted onVideoPause={() => console.log(':(')} />
 
+                <TwitchEmbed channel="helloblacky" id="helloblacky" theme="dark" muted onVideoPause={() => console.log(':(')} />
+            </Box>
+            <Box display="flex">
+                <TwitchEmbed channel="diagonalj117" id="diagonalj117" theme="dark" muted onVideoPause={() => console.log(':(')} />
+
+                <TwitchEmbed channel="politotrukutru" id="politotrukutru" theme="dark" muted onVideoPause={() => console.log(':(')} />
+
+            </Box>
 
         </div>
     )
