@@ -10,6 +10,13 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#000000',
         justifyContent: 'center',
     },
+    TopBarText: {
+        color: 'white', 
+        fontWeight: 'bold', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'center'
+    },
     tabs: {
         flexGrow: 0,
         marginLeft: theme.spacing(20)
@@ -30,7 +37,7 @@ const TopBar = () => {
         <div>
             <AppBar display='flex' position="fixed">
                 <Toolbar className={classes.toolbar}>
-                    <Box display='flex' flexGrow={1}><Typography variant="h6" style={{ color: 'white', fontWeight: 'bold', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>NorsuisoSquad</Typography></Box>
+                    <Box display='flex' flexGrow={1}><Typography className={classes.TopBarText} variant="h6" >NorsuisoSquad</Typography></Box>
                     <Box flexGrow={1}><MainTabs className={classes.tabs} /></Box>
                     <Box flexGrow={1} display="flex">
                         <Box flexGrow={1}></Box>
