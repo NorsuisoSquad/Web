@@ -1,5 +1,6 @@
 import React from 'react'
 import TopBar from './TopBar'
+import Footer from './Footer'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,11 +25,12 @@ const Layout = (props) => {
     const classes = useStyles();
     const { children } = props;
     return (
-        <div className={classes.root}>
+        <div className={classes.root} style={{display:'flex'}}>
             <TopBar />
-            <main className={classes.content}>
+            <main className={classes.content} style={{backgroundColor:'grey', padding:'0px'}}>
                 <div className={classes.toolbar} />
-                { children }
+                {children}
+                <Footer />
             </main>
         </div>
     )
