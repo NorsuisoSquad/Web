@@ -8,14 +8,16 @@ import MainTabs from '../Layout/MainTabs';
 import Logo from '../Layout/Logo';
 /*Hasta aca-----------------------------------------------------------------------------------*/
 
+import { TwitchEmbed, TwitchChat, TwitchClip, TwitchPlayer } from 'react-twitch-embed';
+
 const useStyles = makeStyles((theme) => ({
-/*    borde: {
-        padding:'0px',
-        margin:'0px',
-        backgroundColor:'white'
-    },*/
-    otro:{
-        height:'87.4vh'
+    /*    borde: {
+            padding:'0px',
+            margin:'0px',
+            backgroundColor:'white'
+        },*/
+    otro: {
+        height: '87.4vh'
     }
 }))
 
@@ -24,8 +26,8 @@ const Inicio = () => {
     return (
         <div className={/*classes.borde, */classes.otro}>
             Pag de Inicio
-{/*Borrar desde aqui---------------------------------------------------------------------------*/}
-{/*            <Box display="flex" alignItems="flex-start" p={1} m={1} bgcolor="background.paper" css={{ height: 50 }}>
+            {/*Borrar desde aqui---------------------------------------------------------------------------*/}
+            {/*            <Box display="flex" alignItems="flex-start" p={1} m={1} bgcolor="background.paper" css={{ height: 50 }}>
                 <Box flexGrow={1}><Typography variant="h6">NorsuisoSquad</Typography></Box>
                 <Box flexGrow={1}><MainTabs className={classes.tabs} /></Box>
                 <Box flexGrow={1} display="flex">
@@ -33,8 +35,18 @@ const Inicio = () => {
                     <Box><Logo float='right' width={50} className={classes.logo} /></Box>
                 </Box>
             </Box>*/}
-{/*Hasta aca-----------------------------------------------------------------------------------*/}
-    </div>
+            {/*Hasta aca-----------------------------------------------------------------------------------*/}
+
+            <TwitchEmbed
+                channel="emmanueltc"
+                id="emmanueltc"
+                theme="dark"
+                muted
+                onVideoPause={() => console.log(':(')}
+            />
+
+
+        </div>
     )
 }
 
