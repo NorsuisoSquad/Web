@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Container, Box } from '@material-ui/core';
-import Logo from './Logo';
+import LogoBlanco from './LogoBlanco';
 
 const useStyles = makeStyles((theme) => ({
     footer: {
@@ -34,7 +34,7 @@ const Footer = () => {
                         <Box flexGrow={1}></Box>
                         <Box style={{ display: 'flex' }} ><Typography className={classes.footerText} textShadow={10} variant="h6" >Norsuiso</Typography></Box>
                     </Box>
-                    <Box display='flex'><Logo className={classes.logo} width={40} /></Box>
+                    <Box display='flex'><LogoBlanco className={classes.logo} width={40} /></Box>
                     <Box display='flex' flexGrow={1}><Typography className={classes.footerText} variant="h6" >Squad</Typography></Box>
                 </Box>
             </Container>

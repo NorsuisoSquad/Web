@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
 import MainTabs from './MainTabs';
-import Logo from './Logo';
+import LogoBlanco from './LogoBlanco';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -41,7 +41,7 @@ const TopBar = () => {
                     <Box flexGrow={1}><MainTabs className={classes.tabs} /></Box>
                     <Box flexGrow={1} display="flex">
                         <Box flexGrow={1}></Box>
-                        <Box><Logo float='right' width={50} className={classes.logo} /></Box>
+                        <Box><LogoBlanco float='right' width={50} className={classes.logo} /></Box>
                     </Box>
 
                 </Toolbar>

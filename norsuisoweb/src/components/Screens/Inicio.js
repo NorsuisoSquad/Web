@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
 import Badge from '@material-ui/core/Badge'
-import { Typography, Button } from '@material-ui/core';
+import { Typography/*, Button*/ } from '@material-ui/core';
 import { Avatar, Box } from '@material-ui/core';
 import { TwitchChat, TwitchPlayer } from 'react-twitch-embed';
 

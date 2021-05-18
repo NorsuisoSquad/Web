@@ -1,8 +1,8 @@
 import React from 'react'
 import Badge from '@material-ui/core/Badge'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { Avatar, Box } from '@material-ui/core';
-import { TwitchChat, TwitchPlayer } from 'react-twitch-embed';
+import { Avatar/*, Box*/ } from '@material-ui/core';
+/*import { TwitchChat, TwitchPlayer } from 'react-twitch-embed';*/
 
 
 const StyledBadge = withStyles((theme) => ({
@@ -109,7 +109,7 @@ const Miembros = () => {
                 </StyledBadge>
 
                 <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
-                    <Avatar className={classes.AvatarSize} alt="diagonalj117" src="https://static-cdn.jtvnw.net/jtv_user_pictures/516865aa-551e-401a-9a96-71c81c4d641b-profile_image-300x300.png" />
+                    <Avatar className={classes.AvatarSize} alt="diagonalj117" src="https://static-cdn.jtvnw.net/jtv_user_pictures/dcda78d1-588b-4b05-8bec-f64932545315-profile_image-300x300.png" />
                 </StyledBadge>
 
 
@@ -119,7 +119,8 @@ const Miembros = () => {
 
                 <br /><br />
             </div>
-            <Box id='aaa' channel="kayflawersh" onOffline={kayOff} style={{ display: 'initial' }}>
+            <div>
+{/*            <Box id='aaa' channel="kayflawersh" onOffline={kayOff} style={{ display: 'initial' }}>
                 <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
                     <Badge overlap="circle" anchorOrigin={{ vertical: 'top', horizontal: 'left', }} badgeContent={<SmallAvatar alt="NorsuisoSquad" src="https://avatars.githubusercontent.com/u/81671829" />} >
                         <Avatar className={classes.AvatarSize} alt="EmmanuelTC" src="https://static-cdn.jtvnw.net/jtv_user_pictures/04fc7ed0-e995-4d2a-82c0-e9bbc2b48dc2-profile_image-300x300.png" />
@@ -129,13 +130,13 @@ const Miembros = () => {
             </Box>
 
             <TwitchPlayer id="kayflawersh" style={{ display: 'none' }} onOffline={kayOff} channel="kayflawersh" width='622px' height='350px' muted />
-
-
+*/}
+            </div>
         </div>
     )
-    function kayOff() {
+    /*function kayOff() {
         document.getElementById('aaa').style.display = 'none';
-    }
+    }*/
 }
 
 export default Miembros
