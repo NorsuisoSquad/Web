@@ -77,35 +77,35 @@ const Inicio = () => {
             {/*<Button onClick={}>Boton Prueba Funcion </Button>*/}
 
             <div>
-                <Box id="LiveEmmanuelTC" style={{ display: 'none' }}>
+                <Box id="LiveEmmanuelTC" style={{ display: 'block' }}>
                     <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
                         <Badge overlap="circle" anchorOrigin={{ vertical: 'top', horizontal: 'left', }} badgeContent={<SmallAvatar alt="NorsuisoSquad" src="https://avatars.githubusercontent.com/u/81671829" />} >
                             <Avatar className={classes.AvatarSize} alt="EmmanuelTC" src="https://static-cdn.jtvnw.net/jtv_user_pictures/04fc7ed0-e995-4d2a-82c0-e9bbc2b48dc2-profile_image-300x300.png" />
                         </Badge>
                     </StyledBadge>
                 </Box>
-                <Box id="Livezafiro_online" style={{ display: 'none' }}>
+                <Box id="Livezafiro_online" style={{ display: 'block' }}>
                     <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
                         <Badge overlap="circle" anchorOrigin={{ vertical: 'top', horizontal: 'left', }} badgeContent={<SmallAvatar alt="NorsuisoSquad" src="https://avatars.githubusercontent.com/u/81671829" />} >
                             <Avatar className={classes.AvatarSize} alt="zafiro_online" src="https://static-cdn.jtvnw.net/jtv_user_pictures/54bd1d20-884b-4919-87aa-26cc58279af2-profile_image-300x300.png" />
                         </Badge>
                     </StyledBadge>
                 </Box>
-                <Box id="Livekayflawersh" style={{ display: 'none' }}>
+                <Box id="Livekayflawersh" style={{ display: 'block' }}>
                     <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
                         <Badge overlap="circle" anchorOrigin={{ vertical: 'top', horizontal: 'left', }} badgeContent={<SmallAvatar alt="NorsuisoSquad" src="https://avatars.githubusercontent.com/u/81671829" />} >
                             <Avatar className={classes.AvatarSize} alt="kayflawersh" src="https://static-cdn.jtvnw.net/jtv_user_pictures/94af2804-0a66-4e85-9632-eadf6cea7aa7-profile_image-300x300.png" />
                         </Badge>
                     </StyledBadge>
                 </Box>
-                <Box id="Livehelloblacky" style={{ display: 'none' }}>
+                <Box id="Livehelloblacky" style={{ display: 'block' }}>
                     <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
                         <Badge overlap="circle" anchorOrigin={{ vertical: 'top', horizontal: 'left', }} badgeContent={<SmallAvatar alt="NorsuisoSquad" src="https://avatars.githubusercontent.com/u/81671829" />} >
                             <Avatar className={classes.AvatarSize} alt="helloblacky" src="https://static-cdn.jtvnw.net/jtv_user_pictures/c8859f69-a1dd-4ec6-a45d-32cf6ec8b90b-profile_image-300x300.png" />
                         </Badge>
                     </StyledBadge>
                 </Box>
-                <Box id="Livepolitotrukutru" style={{ display: 'none' }}>
+                <Box id="Livepolitotrukutru" style={{ display: 'block' }}>
                     <StyledBadge overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
                         <Badge overlap="circle" anchorOrigin={{ vertical: 'top', horizontal: 'left', }} badgeContent={<SmallAvatar alt="NorsuisoSquad" src="https://avatars.githubusercontent.com/u/81671829" />} >
                             <Avatar className={classes.AvatarSize} alt="politotrukutru" src="https://static-cdn.jtvnw.net/jtv_user_pictures/e47d2705-e958-4746-8bd3-9d8033b92fcb-profile_image-300x300.png" />
@@ -113,30 +113,30 @@ const Inicio = () => {
                     </StyledBadge>
                 </Box>
                 {/*
-                <Box id="LiveCambiame" style={{ display: 'none' }}>
+                <Box id="LiveCambiame" style={{ display: 'block' }}>
                 </Box>
                 */}
             </div>
             <div>{/*Reproductores de Streamers y Chats*/}
                 <Box display='flex'>
-                    <TwitchPlayer id="EmmanuelTC" style={{ display: 'none' }} onOffline={EmmanuelTC_Offline} onOnline={EmmanuelTC_Online} channel="emmanueltc" className={classes.player} width='622px' height='350px' muted />
-                    <TwitchChat id="EmmanuelTC_Chat" style={{ display: 'none' }} channel="emmanueltc" className={classes.chat} theme='dark' />
+                    <TwitchPlayer id="EmmanuelTC" style={{ display: 'block' }} onOffline={EmmanuelTC_Offline} onOnline={EmmanuelTC_Online} channel="emmanueltc" className={classes.player} width='622px' height='350px' muted />
+                    <TwitchChat id="EmmanuelTC_Chat" style={{ display: 'block' }} channel="emmanueltc" className={classes.chat} theme='dark' />
                 </Box>
                 <Box display='flex'>
-                    <TwitchPlayer id="zafiro_online" style={{ display: 'none' }} onOffline={zafiro_online_Offline} onOnline={zafiro_online_Online} channel="zafiro_online" className={classes.player} width='622px' height='350px' muted />
-                    <TwitchChat id="zafiro_online_Chat" style={{ display: 'none' }} channel="zafiro_online" className={classes.chat} theme='dark' />
+                    <TwitchPlayer id="zafiro_online" style={{ display: 'block' }} onOffline={zafiro_online_Offline} onOnline={zafiro_online_Online} channel="zafiro_online" className={classes.player} width='622px' height='350px' muted />
+                    <TwitchChat id="zafiro_online_Chat" style={{ display: 'block' }} channel="zafiro_online" className={classes.chat} theme='dark' />
                 </Box>
                 <Box display='flex'>
-                    <TwitchPlayer id="kayflawersh" style={{ display: 'none' }} onOffline={kayflawersh_Offline} onOnline={kayflawersh_Online} channel="kayflawersh" className={classes.player} width='622px' height='350px' muted />
-                    <TwitchChat id="kayflawersh_Chat" style={{ display: 'none' }} channel="kayflawersh" className={classes.chat} theme='dark' />
+                    <TwitchPlayer id="kayflawersh" style={{ display: 'block' }} onOffline={kayflawersh_Offline} onOnline={kayflawersh_Online} channel="kayflawersh" className={classes.player} width='622px' height='350px' muted />
+                    <TwitchChat id="kayflawersh_Chat" style={{ display: 'block' }} channel="kayflawersh" className={classes.chat} theme='dark' />
                 </Box>
                 <Box display='flex'>
-                    <TwitchPlayer id="helloblacky" style={{ display: 'none' }} onOffline={helloblacky_Offline} onOnline={helloblacky_Online} channel="helloblacky" className={classes.player} width='622px' height='350px' muted />
-                    <TwitchChat id="helloblacky_Chat" style={{ display: 'none' }} channel="helloblacky" className={classes.chat} theme='dark' />
+                    <TwitchPlayer id="helloblacky" style={{ display: 'block' }} onOffline={helloblacky_Offline} onOnline={helloblacky_Online} channel="helloblacky" className={classes.player} width='622px' height='350px' muted />
+                    <TwitchChat id="helloblacky_Chat" style={{ display: 'block' }} channel="helloblacky" className={classes.chat} theme='dark' />
                 </Box>
                 <Box display='flex'>
-                    <TwitchPlayer id="politotrukutru" style={{ display: 'none' }} onOffline={politotrukutru_Offline} onOnline={politotrukutru_Online} channel="politotrukutru" className={classes.player} width='622px' height='350px' muted />
-                    <TwitchChat id="politotrukutru_Chat" style={{ display: 'none' }} channel="politotrukutru" className={classes.chat} theme='dark' />
+                    <TwitchPlayer id="politotrukutru" style={{ display: 'block' }} onOffline={politotrukutru_Offline} onOnline={politotrukutru_Online} channel="politotrukutru" className={classes.player} width='622px' height='350px' muted />
+                    <TwitchChat id="politotrukutru_Chat" style={{ display: 'block' }} channel="politotrukutru" className={classes.chat} theme='dark' />
                 </Box>
                 {/*
             <Box display='flex'>
@@ -173,9 +173,9 @@ const Inicio = () => {
 
     //---------------------------------------------------------------------------
     function EmmanuelTC_Offline() {
-        document.getElementById('EmmanuelTC').style.display = 'none';
-        document.getElementById('EmmanuelTC_Chat').style.display = 'none';
-        document.getElementById('LiveEmmanuelTC').style.display = 'none';
+        document.getElementById('EmmanuelTC').style.display = 'block';
+        document.getElementById('EmmanuelTC_Chat').style.display = 'block';
+        document.getElementById('LiveEmmanuelTC').style.display = 'block';
     }
     function EmmanuelTC_Online() {
         document.getElementById('EmmanuelTC').style.display = 'initial';
@@ -184,9 +184,9 @@ const Inicio = () => {
     }
     //---------------------------------------------------------------------------
     function zafiro_online_Offline() {
-        document.getElementById('zafiro_online').style.display = 'none';
-        document.getElementById('zafiro_online_Chat').style.display = 'none';
-        document.getElementById('Livezafiro_online').style.display = 'none';
+        document.getElementById('zafiro_online').style.display = 'block';
+        document.getElementById('zafiro_online_Chat').style.display = 'block';
+        document.getElementById('Livezafiro_online').style.display = 'block';
     }
     function zafiro_online_Online() {
         document.getElementById('zafiro_online').style.display = 'initial';
@@ -195,9 +195,9 @@ const Inicio = () => {
     }
     //---------------------------------------------------------------------------
     function kayflawersh_Offline() {
-        document.getElementById('kayflawersh').style.display = 'none';
-        document.getElementById('kayflawersh_Chat').style.display = 'none';
-        document.getElementById('Livekayflawersh').style.display = 'none';
+        document.getElementById('kayflawersh').style.display = 'block';
+        document.getElementById('kayflawersh_Chat').style.display = 'block';
+        document.getElementById('Livekayflawersh').style.display = 'block';
     }
     function kayflawersh_Online() {
         document.getElementById('kayflawersh').style.display = 'initial';
@@ -206,9 +206,9 @@ const Inicio = () => {
     }
     //---------------------------------------------------------------------------
     function helloblacky_Offline() {
-        document.getElementById('helloblacky').style.display = 'none';
-        document.getElementById('helloblacky_Chat').style.display = 'none';
-        document.getElementById('Livehelloblacky').style.display = 'none';
+        document.getElementById('helloblacky').style.display = 'block';
+        document.getElementById('helloblacky_Chat').style.display = 'block';
+        document.getElementById('Livehelloblacky').style.display = 'block';
     }
     function helloblacky_Online() {
         document.getElementById('helloblacky').style.display = 'initial';
@@ -217,9 +217,9 @@ const Inicio = () => {
     }
     //---------------------------------------------------------------------------
     function politotrukutru_Offline() {
-        document.getElementById('politotrukutru').style.display = 'none';
-        document.getElementById('politotrukutru_Chat').style.display = 'none';
-        document.getElementById('Livepolitotrukutru').style.display = 'none';
+        document.getElementById('politotrukutru').style.display = 'block';
+        document.getElementById('politotrukutru_Chat').style.display = 'block';
+        document.getElementById('Livepolitotrukutru').style.display = 'block';
     }
     function politotrukutru_Online() {
         document.getElementById('politotrukutru').style.display = 'initial';
